@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h2>Register for Student Organization:</h2>
+    <form action="{{ url_for('register') }}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+        
+        <label for="organization">Organization:</label>
+        <select name="organization" required>
+            <option value="Org1">Organization 1</option>
+            <option value="Org2">Organization 2</option>
+            <option value="Org3">Organization 3</option>
+            <option value="Org4">Organization 4</option>
+            <option value="Org5">Organization 5</option>
+        </select><br>
+        
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}
