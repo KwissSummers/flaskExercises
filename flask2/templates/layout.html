@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title%} Flask App {%endblock%}</title>
+</head>
+<body>
+    <header>
+        <h1> Flask App</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href= "{{ url_for('home')}}"> Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        {%block content%}{%endblock%}
+    </main>
+</body>
+</html>

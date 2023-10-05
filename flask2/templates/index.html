@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h2>Enter an Integer:</h2>
+    <form action="{{ url_for('check_number') }}" method="get">
+        <input type="text" name="number" required>
+        <input type="submit" value="Check">
+    </form>
+{% endblock %}
